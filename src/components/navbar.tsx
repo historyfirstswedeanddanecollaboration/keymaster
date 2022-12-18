@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Navbar = () =>{
     return(
+        <$NavbarContainer>
         <$Navbar>
                 <$NavLogo>
                     <img src="/images/logo.png" alt="logo" />
@@ -13,21 +14,25 @@ const Navbar = () =>{
                     <$NavLink href='/profile'><img src="/images/profile.png" alt="" /></$NavLink>
                 </$NavItem>
         </$Navbar>
+        </$NavbarContainer>
     )
 }  
 
-const $Navbar = styled.nav`
+const $NavbarContainer = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@200&display=swap');    
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 12px;
+`;
+const $Navbar = styled.nav`
     font-family: 'IBM Plex Sans Thai', sans-serif;
     display: flex;
     justify-content: space-between;
     color: white;
     border-bottom: 2px solid rgba(255,255,255,0.2);
-    width: 70%;
-    left: 15%;
-    position: absolute;
     padding: 15px;
-    top: 20px;
+    width: 60%;
 `;
 
 const $NavLogo = styled.nav`
