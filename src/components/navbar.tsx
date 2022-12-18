@@ -5,7 +5,7 @@ const Navbar = () =>{
     return(
         <$Navbar>
                 <$NavLogo>
-                    <img src="/images/logo.png" alt="" />
+                    <img src="/images/logo.png" alt="logo" />
                 </$NavLogo>
                 <$NavItem>
                     <$NavLink href='/leaderboard'>LEADERBOARD</$NavLink>
