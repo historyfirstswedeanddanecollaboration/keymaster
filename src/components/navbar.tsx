@@ -10,7 +10,7 @@ const Navbar = () =>{
                 </$NavLogo>
                 <$NavItem>
                     <$NavLink href='/leaderboard'>LEADERBOARD</$NavLink>
-                    <$NavLink href='/tips-tricks'>TIPS & TRICKS</$NavLink>
+                    <$NavLink href='/tips'>TIPS & TRICKS</$NavLink>
                     <$NavLink href='/profile'><img src="/images/profile.png" alt="" /></$NavLink>
                 </$NavItem>
         </$Navbar>
@@ -53,3 +53,4 @@ const $NavLink = styled(Link)`
     color: white;
 `;
 export default Navbar;
+
